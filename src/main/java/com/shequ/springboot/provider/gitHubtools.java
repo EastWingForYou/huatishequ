@@ -42,8 +42,7 @@ public class gitHubtools {
             Request request = new Request.Builder()
                     .url("https://api.github.com/user?access_token="+ auccessToken)
                     .build();
-        try {
-            Response response = client.newCall(request).execute();
+        try {            Response response = client.newCall(request).execute();
             String  str = response.body().string();
 //            JSON的parseObject 方法 是用这个str字符串转换成 后者的对象
             GitHubUser gitHubUser = JSON.parseObject(str, GitHubUser.class);
