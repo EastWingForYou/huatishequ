@@ -3,7 +3,7 @@ package com.shequ.springboot.Controller;
 import com.shequ.springboot.Dao.InsertUser;
 import com.shequ.springboot.dto.AuccessDTO;
 import com.shequ.springboot.dto.GitHubUser;
-import com.shequ.springboot.dto.User;
+import com.shequ.springboot.Model.User;
 import com.shequ.springboot.provider.gitHubtools;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.util.UUID;
 
 @Controller

@@ -1,6 +1,6 @@
 package com.shequ.springboot.Dao;
 
-import com.shequ.springboot.dto.User;
+import com.shequ.springboot.Model.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -16,6 +16,4 @@ public interface InsertUser {
     @Select("select * from user where token = #{token}")
     User findByToken(@Param("token") String token);
 
-    @Select("select * from user where name = #{name}")
-    String findByUserName(String name);
 }
